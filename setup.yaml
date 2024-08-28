@@ -1,0 +1,12 @@
+- hosts: localhost 
+  become: true
+  connection: local
+
+  tasks:
+
+  - import_tasks: tasks/check-user.yaml
+  - import_tasks: tasks/update-package-cache.yaml
+  - import_tasks: tasks/configure-ubuntu-setup.yaml
+    when: ansible_distribution in ["Debian","Ubuntu"]
+  - import_tasks: tasks/configure-centos-setup.yaml
+    when: ansible_distribution in ["Amazon","RedHat","CentOS"]
