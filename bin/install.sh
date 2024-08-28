@@ -9,13 +9,13 @@ sudo apt install --yes ansible git curl
 
 echo "################ updating help binary 'vn' for getting deploy command ################\n\n"
 
-sudo curl -qL https://bit.ly/3yXngJy -o /usr/local/bin/vh
+sudo curl -qL https://bit.ly/3YYnJpz -o /usr/local/bin/vh
 sudo chmod +x /usr/local/bin/vh
 
 echo "################### cloning virtualhost with MultiPHP repo ###########################"
 
 rm -rf ~/vh
-git clone https://github.com/holisollogistic/Ansible.git ~/vh
+git clone https://github.com/holisollogistic/Test.git ~/vh
 echo "\n\ncopy & modify this command or run '$(tput bold)vh -h$(tput sgr0)' for getting this command during any session\n\n"
 echo 'Usage: vh -php 8.1 -url app.test'
 exec ${SHELL}
