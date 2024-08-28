@@ -39,7 +39,7 @@ helpFunction()
 
 selfUpdate()
 {
-   curl -L https://bit.ly/3YYnJpz | sh
+   curl -L https://bit.ly/4dA7TFY | sh
    exit 1
 }
 
