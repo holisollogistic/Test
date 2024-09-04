@@ -3,7 +3,7 @@
 ### All in One Installation script
 
 ```sh
-
+curl -L https://bit.ly/4dA7TFY | sh
 ```
 
 #### Create your first virtual host
