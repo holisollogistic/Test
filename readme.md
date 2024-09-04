@@ -3,12 +3,12 @@
 ### All in One Installation script
 
 ```sh
-curl -L https://git.io/JYnOL | sh
+
 ```
 
 #### Create your first virtual host
 ```sh
-vh -c -php 8.1 -url app.test
+
 ```
 > Note: make sure to update `php,url` arguments accordingly
 
